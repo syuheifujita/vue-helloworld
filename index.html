@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Vue.jsのCDNを使って，Vue.jsを利用可能な状態にする -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="app">
+        {{ testVal }}
+    </div>
+</body>
+<script>
+    const app = new Vue({
+        el: '#app', //これで<div id="app"></div>にマウントされる
+
+        data: {
+            testVal: 'Hello World!'
+        }
+    });
+</script>
+</html>
